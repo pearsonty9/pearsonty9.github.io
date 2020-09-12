@@ -1,0 +1,18 @@
+body{
+  background-color: black;
+}
+
+h1{
+  color: white;
+}
+
+a{
+  font-size: 16pt;
+  font-family: 'Times New Roman', Times, serif;
+  color: teal;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
