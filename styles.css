@@ -11,7 +11,7 @@ h1{
 }
 
 p{
-  text-align: center;
+  margin: 0% 5%;
   font-size: 16pt;
   font-family: 'Times New Roman', Times, serif;
   color: white;
@@ -47,4 +47,10 @@ li a:hover {
 
 .active{
   color: aqua;
+}
+
+.body{
+  padding:20px;
+  margin-top:30px;
+  background-color:#1abc9c;
 }
