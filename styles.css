@@ -1,18 +1,50 @@
 body{
   background-color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16pt;
 }
 
 h1{
+  text-align: left;
+  color: white;
+  padding-left: 20px;
+}
+
+p{
+  text-align: center;
+  font-size: 16pt;
+  font-family: 'Times New Roman', Times, serif;
   color: white;
 }
 
-a{
-  font-size: 16pt;
-  font-family: 'Times New Roman', Times, serif;
-  color: teal;
-  text-decoration: none;
+ul {
+  list-style-type: none;
+  background-color: black;
+  vertical-align: center;
+  margin: 0px;
+  padding: 10px 0px 10px 0px;
+  top: 0px;
+  width: 100%;
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
 
-ul{
-  list-style-type: none;
+li{
+  display: inline;
+  color: aquamarine;
+  margin: 16px 16px;
+}
+
+li a {
+  text-decoration: none;
+  color:aquamarine;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  color: white;
+}
+
+.active{
+  color: aqua;
 }
