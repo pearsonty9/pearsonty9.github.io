@@ -1,7 +1,10 @@
 body {
 	background-color: black;
 	font-family: 'Times New Roman', Times, serif;
-	font-size: 16pt;
+  font-size: 16pt;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -26,16 +29,15 @@ ul {
 	padding: 10px 0px 10px 0px;
 	top: 0px;
 	width: 100%;
-	position: fixed;
-	/* Make it stick, even on scroll */
-	overflow: auto;
-	/* Enable scrolling if the sidenav has too much content */
+	position: fixed;/* Make it stick, even on scroll */
+  overflow: auto;/* Enable scrolling if the sidenav has too much content */
+  z-index: 1;
 }
 
 ul li {
 	display: inline;
 	color: aquamarine;
-	margin: 16px 16px;
+  margin: 16px 16px;
 }
 
 li a {
@@ -53,17 +55,18 @@ li a:hover {
 }
 
 .body {
-	padding: 20px;
-	margin-top: 30px;
+	padding: 50px 0px;
+	margin: 0;
   background-color: #1abc9c;
-	height: auto;
+  height: auto;
+  width: 100%;
+  z-index: -1;
 }
 
 ul.achievement {
 	list-style-type: circle;
 	background-color: transparent;
-	position: relative;
-	/* Make it stick, even on scroll */
+	position: relative;/* Make it stick, even on scroll */
 }
 
 li.achievement {
@@ -74,9 +77,10 @@ li.achievement {
 
 .home-block{
   position: relative;
-  margin: 20px;
+  margin: 50px 0px;
   padding: 50px;
   background-color: grey;
   width: 40%;
   border-radius: 20px;
+  z-index: 0;
 }
