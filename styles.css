@@ -1,86 +1,108 @@
+:root {
+	--main-text-color: white;
+	--main-bg-color:#292929;
+	--main-page-color:#477c7e;
+	--header-color: #161616;
+	--header-link-color: skyblue;
+}
+
 body {
-	background-color: black;
+	background-color: var(--main-bg-color);
 	font-family: 'Times New Roman', Times, serif;
-  font-size: 16pt;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
+	font-size: 16pt;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 h1 {
 	text-align: left;
-	color: white;
-  padding: 0px;
-  margin: 0px 10px 10px 10px;
+	color: var(--main-text-color);
+	padding: 0px;
+	margin: 0px 10px 10px 10px;
 }
 
 p {
 	margin: 0% 5%;
 	font-size: 16pt;
 	font-family: 'Times New Roman', Times, serif;
-	color: white;
+	color: var(--main-text-color);
 }
 
 ul {
 	list-style-type: none;
-	background-color: black;
+	background-color: var(--header-color);
 	vertical-align: center;
 	margin: 0px;
 	padding: 10px 0px 10px 0px;
 	top: 0px;
 	width: 100%;
-	position: fixed;/* Make it stick, even on scroll */
-  overflow: auto;/* Enable scrolling if the sidenav has too much content */
-  z-index: 1;
+	position: fixed;
+	/* Make it stick, even on scroll */
+	overflow: auto;
+	/* Enable scrolling if the sidenav has too much content */
+	z-index: 1;
 }
 
 ul li {
 	display: inline;
-	color: aquamarine;
-  margin: 16px 16px;
+	color: var(--header-link-color);
+	margin: 16px 16px;
 }
 
 li a {
 	text-decoration: none;
-	color: aquamarine;
+	color: var(--header-link-color);
+	font-size: 18pt;
 }
 
 /* Change the link color on hover */
 li a:hover {
-	color: white;
+	color: #007FAB;
 }
 
 .active {
-	color: skyblue;
+	color: #007FAB;
 }
 
 .body {
 	padding: 50px 0px;
-	margin: 0;
-  background-color: #1abc9c;
-  height: auto;
-  width: 100%;
-  z-index: -1;
+	margin: 5% 5% 2% 5%;
+	background-color: var(--main-page-color);
+	border-radius: 20px;
+	height: 1500px;
+	width: 90%;
+	z-index: -1;
 }
 
 ul.achievement {
 	list-style-type: circle;
 	background-color: transparent;
-	position: relative;/* Make it stick, even on scroll */
+	position: relative;
+	/* Make it stick, even on scroll */
 }
 
 li.achievement {
 	display: list-item;
-	color: white;
+	color: var(--main-text-color);
 	margin: 0% 8%;
 }
 
-.home-block{
-  position: relative;
-  margin: 50px 0px;
-  padding: 50px;
-  background-color: grey;
-  width: 40%;
-  border-radius: 20px;
-  z-index: 0;
+.home-block {
+	position: relative;
+	margin: 50px 0px;
+	padding: 50px;
+	background-color: #1f1f1f;
+	width: 40%;
+	border-radius: 20px;
+	z-index: 0;
+}
+
+.pageHeading{
+	text-align: center;
+	font-size: 48pt;
+	background-color: #536872;
+	border-radius: 20px;
+	width: 50%;
+	margin: auto;
 }
