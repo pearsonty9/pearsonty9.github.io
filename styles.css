@@ -26,6 +26,19 @@ p {
 	margin: 0% 5%;
 	font-size: 16pt;
 	font-family: 'Times New Roman', Times, serif;
+	color: white;
+}
+
+.home-block p {
+	margin: 0% 5%;
+	font-size: 16pt;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.education-block p {
+	margin: 0% 5%;
+	font-size: 30pt;
+	font-family: 'Times New Roman', Times, serif;
 	color: var(--main-text-color);
 }
 
@@ -37,10 +50,8 @@ ul {
 	padding: 10px 0px 10px 0px;
 	top: 0px;
 	width: 100%;
-	position: fixed;
-	/* Make it stick, even on scroll */
-	overflow: auto;
-	/* Enable scrolling if the sidenav has too much content */
+	position: fixed;/* Make it stick, even on scroll */
+	overflow: auto;/* Enable scrolling if the sidenav has too much content */
 	z-index: 1;
 }
 
@@ -78,8 +89,7 @@ li a:hover {
 ul.achievement {
 	list-style-type: circle;
 	background-color: transparent;
-	position: relative;
-	/* Make it stick, even on scroll */
+	position: relative;/* Make it stick, even on scroll */
 }
 
 li.achievement {
@@ -92,17 +102,29 @@ li.achievement {
 	position: relative;
 	margin: 50px 0px;
 	padding: 50px;
-	background-color: #1f1f1f;
+	background-color: var(--header-color);
 	width: 40%;
-	border-radius: 20px;
+	border-radius: 10px;
+	z-index: 0;
+}
+
+.education-block {
+	font-size: 24pt;
+	text-align: center;
+	background-color: var(--header-color);
+	margin: auto;
+	margin-top: 30px;
+	padding: 10px 0px;
+	width: 40%;
+	border-radius: 10px;
 	z-index: 0;
 }
 
 .pageHeading{
 	text-align: center;
 	font-size: 48pt;
-	background-color: #536872;
-	border-radius: 20px;
+	background-color: var(--header-color);
+	border-radius: 10px;
 	width: 50%;
 	margin: auto;
 }
