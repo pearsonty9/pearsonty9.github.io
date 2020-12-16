@@ -81,7 +81,8 @@ li a:hover {
 	margin: 5% 5% 2% 5%;
 	background-color: var(--main-page-color);
 	border-radius: 20px;
-	height: 1500px;
+	height: auto;
+	min-height: 1000px;
 	width: 90%;
 	z-index: -1;
 }
@@ -104,6 +105,16 @@ li.achievement {
 	padding: 50px;
 	background-color: var(--header-color);
 	width: 40%;
+	border-radius: 10px;
+	z-index: 0;
+}
+
+.edu-block {
+	position: relative;
+	margin: 50px 0px;
+	padding: 50px;
+	background-color: var(--header-color);
+	width: auto;
 	border-radius: 10px;
 	z-index: 0;
 }
