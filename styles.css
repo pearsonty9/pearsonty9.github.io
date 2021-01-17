@@ -1,9 +1,11 @@
 :root {
 	--main-text-color: white;
-	--main-bg-color:#292929;
-	--main-page-color:#477c7e;
-	--header-color: #161616;
-	--header-link-color: skyblue;
+	--main-bg-color:#212123; /*#292929*/
+	--main-page-color:#212123; /*#477c7e*/
+	--header-color:#18181a; /*#161616*/
+	--header-text-color:#ffffff; /*skyblue*/
+	--section-bg-color:#4e4e4e;
+	--header-selection-color:#007f90;
 }
 
 body {
@@ -13,33 +15,6 @@ body {
 	max-width: 100%;
 	margin: 0;
 	padding: 0;
-}
-
-h1 {
-	text-align: left;
-	color: var(--main-text-color);
-	padding: 0px;
-	margin: 0px 10px 10px 10px;
-}
-
-p {
-	margin: 0% 5%;
-	font-size: 16pt;
-	font-family: 'Times New Roman', Times, serif;
-	color: white;
-}
-
-.home-block p {
-	margin: 0% 5%;
-	font-size: 16pt;
-	font-family: 'Times New Roman', Times, serif;
-}
-
-.education-block p {
-	margin: 0% 5%;
-	font-size: 30pt;
-	font-family: 'Times New Roman', Times, serif;
-	color: var(--main-text-color);
 }
 
 ul {
@@ -57,85 +32,33 @@ ul {
 
 ul li {
 	display: inline;
-	color: var(--header-link-color);
-	margin: 16px 16px;
+	color: var(--header-text-color);
+	margin-right: 20px;
 }
 
 li a {
 	text-decoration: none;
-	color: var(--header-link-color);
+	color: var(--header-text-color);
 	font-size: 18pt;
+	padding: 6px 8px;
 }
 
 /* Change the link color on hover */
 li a:hover {
-	color: #007FAB;
+	background-color: var(--header-selection-color);
+	border-radius: 15px;
 }
 
 .active {
-	color: #007FAB;
+	background-color: var(--header-selection-color);
+	border-radius: 15px;
 }
 
-.body {
-	padding: 50px 0px;
-	margin: 5% 5% 2% 5%;
+.page {	
+	margin: 5% 3% 2% 3%;
 	background-color: var(--main-page-color);
-	border-radius: 20px;
+	border-radius: 15px;
 	height: auto;
 	min-height: 1000px;
-	width: 90%;
 	z-index: -1;
-}
-
-ul.achievement {
-	list-style-type: circle;
-	background-color: transparent;
-	position: relative;/* Make it stick, even on scroll */
-}
-
-li.achievement {
-	display: list-item;
-	color: var(--main-text-color);
-	margin: 0% 8%;
-}
-
-.home-block {
-	position: relative;
-	margin: 50px 0px;
-	padding: 50px;
-	background-color: var(--header-color);
-	width: 40%;
-	border-radius: 10px;
-	z-index: 0;
-}
-
-.edu-block {
-	position: relative;
-	margin: 50px 0px;
-	padding: 50px;
-	background-color: var(--header-color);
-	width: auto;
-	border-radius: 10px;
-	z-index: 0;
-}
-
-.education-block {
-	font-size: 24pt;
-	text-align: center;
-	background-color: var(--header-color);
-	margin: auto;
-	margin-top: 30px;
-	padding: 10px 0px;
-	width: 40%;
-	border-radius: 10px;
-	z-index: 0;
-}
-
-.pageHeading{
-	text-align: center;
-	font-size: 48pt;
-	background-color: var(--header-color);
-	border-radius: 10px;
-	width: 50%;
-	margin: auto;
 }
