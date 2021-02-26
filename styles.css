@@ -1,0 +1,64 @@
+
+body{
+    max-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.page-top, .page-bot{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    height: 800px;
+
+    font-family: sans-serif;
+
+    overflow: auto;
+}
+
+.page-mid{
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+}
+
+.page-title{
+    background-color: transparent;
+    width: 800px;
+    font-size: 56pt;
+    font-weight: 800;
+    margin: 150px 0px 0px 300px;
+    text-align: center;
+}
+
+.section-title{
+    background-color: transparent;
+    width: 200px;
+    font-size: 30pt;
+    font-weight: 600;
+    margin: 20px 0px 0px 350px;
+    text-align: center;
+}
+
+.text-about{
+    background: transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    font-weight: 500;
+
+    width: 750px;
+
+    padding: 5px 40px;
+}
+
+.image-top{
+    background: black;
+    height: 600px;
+    width: 500px;
+
+    margin: 100px 100px;
+
+    float:right;
+
+}
