@@ -1,26 +1,50 @@
+:root {
+    --header-color: #111;
+    --header-link-color: white;
+}
 
 body{
     max-width: 100%;
 	margin: 0;
-	padding: 0;
+    padding: 0;
+
+    font-family: sans-serif;
 }
 
-.page-top, .page-bot{
+.page-top{
     background-color: white;
     margin: 0;
     padding: 0;
     height: 800px;
 
-    font-family: sans-serif;
-
     overflow: auto;
 }
 
-.page-mid{
+.page-mid-background{
     background-color: #111;
     margin: 0;
     padding: 0;
-    height: 1000px;
+    height: 1100px;
+
+    transform: skewY(3deg);
+    overflow-x: hidden;
+}
+
+.page-mid{
+    margin: 100px 0 0 40px;
+    padding: 0;
+
+    transform: skewY(-3deg);
+    overflow-x: hidden;
+}
+
+.page-bot{
+    margin: 100px 0 0 40px;
+    padding: 0;
+    
+    height: 650px;
+
+    overflow-x: hidden;
 }
 
 .page-title{
@@ -28,17 +52,25 @@ body{
     width: 800px;
     font-size: 56pt;
     font-weight: 800;
-    margin: 150px 0px 0px 300px;
+    margin: 150px 0px 75px 150px;
+    text-align: center;
+}
+
+.page-title-sub{
+    background-color: transparent;
+    width: 800px;
+    font-size: 30pt;
+    font-weight: 400;
+    margin: 0px 0px 0px 30px;
     text-align: center;
 }
 
 .section-title{
     background-color: transparent;
-    width: 200px;
-    font-size: 30pt;
+    font-size: 36pt;
     font-weight: 600;
-    margin: 20px 0px 0px 350px;
-    text-align: center;
+    margin: 20px 0px 0px 200px;
+    text-align: left;
 }
 
 .text-about{
@@ -52,13 +84,82 @@ body{
     padding: 5px 40px;
 }
 
-.image-top{
-    background: black;
-    height: 600px;
-    width: 500px;
+.text-projects{
+    background-color: transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    font-weight: 500;
 
-    margin: 100px 100px;
+    margin: 20px 200px 0 30px;
+    padding: 5px 0px;
+}
+
+.text-contact{
+    background-color: transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    font-weight: 500;
+
+    margin: 20px 200px 0 0;
+    padding: 5px 0px;
+}
+
+.image-top{
+    background: #111;
+    height: 544px;
+    width: 406px;
+
+    margin: 120px 200px 0px 0px;
 
     float:right;
 
+    border: 5px solid #555;
+
+}
+
+.contact-list{
+    font-family: inherit;
+    font-size: 26pt;
+    margin: 0px 0px 20px 0px;
+}
+
+ul.header {
+	list-style-type: none;
+	background-color: var(--header-color);
+	vertical-align: center;
+    text-align: right;
+	margin: 0px 50px 0px 0px;
+	padding: 10px 0px 10px 0px;
+	top: 0px;
+	width: 100%;
+	position: fixed;
+	/* Make it stick, even on scroll */
+	overflow: auto;
+	/* Enable scrolling if the sidenav has too much content */
+	z-index: 1;
+}
+
+ul li.header {
+	display: inline;
+	color: var(--header-link-color);
+	margin: 16px 16px;
+}
+
+li a.header {
+	text-decoration: none;
+	color: var(--header-link-color);
+	font-size: 18pt;
+}
+
+/* Change the link color on hover */
+li a.header:hover {
+	color: #55d2e2;
+}
+
+.active {
+	color: #55d2e2;
+}
+
+ul{
+    list-style-type: none;
 }
