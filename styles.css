@@ -15,7 +15,7 @@ body{
     background-color: white;
     margin: 0;
     padding: 0;
-    height: 800px;
+    height: 1000px;
 
     overflow: auto;
 }
@@ -31,7 +31,7 @@ body{
 }
 
 .page-mid{
-    margin: 100px 0 0 40px;
+    margin: 100px 0 0 30px;
     padding: 0;
 
     transform: skewY(-3deg);
@@ -84,7 +84,7 @@ body{
     padding: 5px 40px;
 }
 
-.text-projects{
+.text-passions{
     background-color: transparent;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20pt;
@@ -120,6 +120,10 @@ body{
 .contact-list{
     font-family: inherit;
     font-size: 26pt;
+    margin: 0px 0px 20px 0px;
+}
+
+.passion-list{
     margin: 0px 0px 20px 0px;
 }
 
