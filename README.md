@@ -1,5 +1,11 @@
 # pearsonty9.github.io
-Personal Website
+Online Portfolio / Website
 
-This is a website using githubs pages.
-I am using this website to show off some of my projects that I working as well as giving people a place to learn more about me
+Created and designed by: Tyler Pearson
+
+This is my first attempt and creating a website.
+Through this project I have devloped my skills in HTML, CSS, and web / UI design.
+
+Home page - gives information about me and my life / passions
+ 
+

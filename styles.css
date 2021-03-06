@@ -39,12 +39,12 @@ body{
 }
 
 .page-bot{
-    margin: 100px 0 0 40px;
+    margin: 100px 0 0 30px;
     padding: 0;
     
     height: 650px;
 
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .page-title{
@@ -65,9 +65,9 @@ body{
     text-align: center;
 }
 
-.section-title{
+h1{
     background-color: transparent;
-    font-size: 36pt;
+    font-size: 32pt;
     font-weight: 600;
     margin: 20px 0px 0px 200px;
     text-align: left;
@@ -100,7 +100,7 @@ body{
     font-size: 20pt;
     font-weight: 500;
 
-    margin: 20px 200px 0 0;
+    margin: 0px 200px 0 0;
     padding: 5px 0px;
 }
 
@@ -114,13 +114,12 @@ body{
     float:right;
 
     border: 5px solid #555;
-
 }
 
 .contact-list{
     font-family: inherit;
-    font-size: 26pt;
-    margin: 0px 0px 20px 0px;
+    font-size: 16pt;
+    margin: 0px 0px 10px 0px;
 }
 
 .passion-list{
@@ -161,9 +160,69 @@ li a.header:hover {
 }
 
 .active {
-	color: #55d2e2;
+	color: #40e0d0;
 }
 
 ul{
     list-style-type: none;
+}
+
+#project-grid{
+    margin: 100px 50px;
+    display: grid;
+    column-gap: 75px;
+    row-gap: 75px;
+    grid-template-columns: auto auto;
+}
+
+.project-card{
+    border-radius: 5px;
+    background-color: rgba(12, 12, 12, 0.863);
+    color: white;
+    height: 500px;
+    width: 780px;
+    margin: 0;
+    padding: 10px 40px;
+}
+
+.project-name{
+    margin: 20px 0 10px 10px;
+    padding: 0;
+    text-align: left;
+}
+
+.project-text{
+    margin: 20px 0 0 10px;
+    text-align: left;
+}
+
+.project-image{
+    border-radius: 10px;
+    margin: auto auto;
+    width: 700px;
+    height: 300px;
+    display: block;
+    overflow: hidden;
+}
+
+.project-image img {
+    transition: transform .5s ease;
+  }
+  
+.project-image:hover img {
+    transform: scale(1.2);
+  }
+
+#header-name{
+    float: left;
+    list-style-type: none;
+	background-color: transparent;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    font-weight: 500;
+	vertical-align: center;
+    text-align: center;
+    margin: 0 0 0 20px;
+    padding: 0;
 }
