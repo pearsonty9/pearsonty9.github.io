@@ -1922,7 +1922,7 @@ input, select, textarea {
 		transition: background-color 0.25s ease-in-out;
 		-webkit-appearance: none;
 		display: block;
-		background: #f9fbfe;
+		background: #0f346d;
 		border: solid 1px #d2d7dc;
 		border-radius: 0.35em;
 		width: 100%;
@@ -2021,8 +2021,8 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			color: #f35858;
-			border-color: rgba(243, 88, 88, 0.5);
+			color: #00a2ff;
+			border-color: rgba(0, 162, 255, 0.5);
 		}
 
 /* Icons */
@@ -2096,11 +2096,11 @@ input, select, textarea {
 		position: relative;
 		padding: 4em 0 2em 0;
 		background-image: url("images/header.svg");
-		background-image: url("images/overlay.png"), url("images/header.svg"), -moz-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-		background-image: url("images/overlay.png"), url("images/header.svg"), -webkit-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-		background-image: url("images/overlay.png"), url("images/header.svg"), -ms-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-		background-image: url("images/overlay.png"), url("images/header.svg"), linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-		background-color: #f08c89;
+		background-image: url("images/overlay.png"), url("images/header.svg"), -moz-linear-gradient(75deg, #70eaff 15%, #9df2b2 55%);
+		background-image: url("images/overlay.png"), url("images/header.svg"), -webkit-linear-gradient(75deg, #70eaff 15%, #9df2b2 55%);
+		background-image: url("images/overlay.png"), url("images/header.svg"), -ms-linear-gradient(75deg, #70eaff 15%, #9df2b2 55%);
+		background-image: url("images/overlay.png"), url("images/header.svg"), linear-gradient(75deg, #70eaff 15%, #9df2b2 55%);
+		background-color: #89f0f0;
 		background-size: 100% 620%;
 		background-size: 128px 128px, 100% 620%, auto;
 		background-repeat: repeat, no-repeat, no-repeat;
