@@ -1,0 +1,95 @@
+:root {
+    --project-card-image-width: 15rem;
+    --project-card-padding: 1rem;
+    --project-card-image-margin: 0.5rem;
+    --project-card-margin: 1rem;
+    --project-item-width: calc(var(--project-card-image-width) + (var(--project-card-padding) + var(--project-card-image-margin) + var(--project-card-margin)) * 2);
+}
+  
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: calc(var(--project-item-width) * 3);
+
+    padding: 2rem;
+    margin: auto;
+
+    list-style: none;
+}
+
+.project {
+    margin: var(--project-card-margin);
+}
+
+.project-card {
+    color: white;
+    background-color: black;
+
+    max-width: 90%;
+    
+    padding: 1rem;
+
+    border-radius: 0.5rem;
+}
+
+.project-card-title {
+    font-size: 1.8rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+    overflow: hidden;
+
+    max-width: calc(var(--project-item-width) - (var(--project-card-margin) + var(--project-card-padding)) * 2);
+
+    margin: 0.2rem 0;
+    padding: 0;
+}
+
+.project-card-image {
+    width: var(--project-card-image-width);
+    height: var(--project-card-image-width);
+    
+    margin: 0.5rem;
+
+    border-radius: 0.2rem;
+}
+
+.project-card-footer {
+    display: flex;
+}
+
+.project-card-button {
+    display: block;
+    padding: 0.5rem 1rem;
+
+    align-self: center;
+}
+
+@media screen and (max-width: 1040px) {
+    .project-list {
+        max-width: 40rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .project-list {
+        max-width: 20rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .project-list {
+        padding: 0;
+    }
+}
