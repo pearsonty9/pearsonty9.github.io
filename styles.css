@@ -1,14 +1,14 @@
 :root {
-    --project-card-image-width: 15rem;
-    --project-card-padding: 1rem;
-    --project-card-image-margin: 0.5rem;
-    --project-card-margin: 1rem;
-    --project-item-width: calc(var(--project-card-image-width) + (var(--project-card-padding) + var(--project-card-image-margin) + var(--project-card-margin)) * 2);
+    --project-card-image-width: 18rem;
+    --project-card-gap: 4rem;
+    --project-item-width: calc(var(--project-card-image-width) + var(--project-card-gap));
+
+    --card-animation-time: 0.3s;
 }
   
 
 html, body {
-    font-family: Arial, Helvetica, sans-serif
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 main {
@@ -19,8 +19,8 @@ main {
 .project-list {
     display: flex;
     flex-wrap: wrap;
-
-    max-width: calc(var(--project-item-width) * 3);
+    gap: 4rem;
+    max-width: calc((var(--project-item-width) * 3) - var(--project-card-gap));
 
     padding: 2rem;
     margin: auto;
@@ -29,62 +29,88 @@ main {
 }
 
 .project {
-    margin: var(--project-card-margin);
+    height: 340px;
 }
 
 .project-card {
     color: white;
-    background-color: black;
+    background-color: rgb(29, 29, 29);
 
-    max-width: 90%;
-    
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
 
-    border-radius: 0.5rem;
+    max-width: 18rem;
+
+    border-radius: 0.6rem;
+	box-shadow: 3px 5px 5px rgb(165, 165, 165);
+    transition: all var(--card-animation-time) ease;
+}
+
+.project:focus {
+    outline: none;
+}
+
+.project:focus-within .project-card-image, .project:hover .project-card-image {
+    border-radius: 0.6rem 0.6rem 0 0;
+	transform: scale(1);
+    margin-bottom: 0.55rem;
 }
 
 .project-card-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     
     overflow: hidden;
 
-    max-width: calc(var(--project-item-width) - (var(--project-card-margin) + var(--project-card-padding)) * 2);
-
-    margin: 0.2rem 0;
-    padding: 0;
+    margin: 0;
 }
 
 .project-card-image {
     width: var(--project-card-image-width);
     height: var(--project-card-image-width);
     
-    margin: 0.5rem;
+    border-radius: 0.4rem 0.4rem 0 0;
 
-    border-radius: 0.2rem;
+    transform: scale(0.95);
+    transition: all var(--card-animation-time) ease;
+
+    cursor: pointer;
 }
 
 .project-card-footer {
     display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin: 0.25rem 0.7rem 0.7rem;
 }
 
 .project-card-button {
-    display: block;
-    padding: 0.5rem 1rem;
+	color: rgb(0, 0, 0);
+    background-color: #ffffff;
+	
+    padding: 0.4rem 1rem;
 
-    align-self: center;
+    border: none;
+	border-radius: 1rem;
+
+    cursor: pointer;
+}
+
+.project-card-button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 @media screen and (max-width: 1040px) {
     .project-list {
-        max-width: 40rem;
+        max-width: calc((var(--project-item-width) * 2) - var(--project-card-gap));
     }
 }
 
 @media screen and (max-width: 720px) {
     .project-list {
-        max-width: 20rem;
+        max-width: calc((var(--project-item-width) * 1) - var(--project-card-gap));
     }
 }
 
