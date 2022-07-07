@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-section {
+    display: flex;
+    padding: 1rem;
+    margin-inline: 3rem;
+    flex-direction: column;
+}

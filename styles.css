@@ -9,12 +9,11 @@
   
 
 html, body {
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     margin: 0;
-    height: calc(100vh - 9rem);
+    /* height: calc(100vh - 9rem); */
 }
 
-main {
+.project-page {
     display: flex;
     justify-content: center;
     padding: 1rem;
@@ -23,7 +22,7 @@ main {
     box-shadow: 3px 3px 3px black;
 }
 
-main::before {
+.project-page::before {
     content: '';
     
     background-color: var(--background-color);
@@ -37,6 +36,10 @@ main::before {
     height: 100%;
     width: 100%;
     z-index: -1;
+}
+
+main {
+    margin-top: 3rem;
 }
 
 .project-list {
@@ -185,6 +188,7 @@ main::before {
 }
 .nav-title {
     align-self: center;
+    font-size: 1.8rem;
 	font-weight: bold;
 	background-image: var(--name-gradient);
 	-webkit-background-clip: text;
