@@ -1,0 +1,41 @@
+# Game jam projects. Covers live in assets/img/games/.
+# Set `featured: true` to show a project first.
+- name: DiLemma
+  url: https://tigershillo.itch.io/dilemma
+  image: /assets/img/games/dilemma.png
+  jam: Secret Santa Jam 2024
+  description: >-
+    Action platformer built around combo-based combat, with four attack
+    combinations and boss battles. Playable in the browser.
+  tags: [Godot, Platformer, Browser]
+  team: With Zaher Ilbih and Steven K. Jr.
+  featured: true
+
+- name: Kart Wheel
+  url: https://caradecachapa.itch.io/kart-wheel
+  image: /assets/img/games/kart-wheel.png
+  jam: Pirate Software Game Jam 2025
+  description: >-
+    Fast-paced 3D tower defense where you are a runaway kart wheel,
+    running over waves of undead monkeys to protect a central tower.
+  tags: [Godot, 3D, Browser]
+  team: Team of 5
+  featured: true
+
+- name: Light House
+  url: https://vellichorgames.itch.io/light-house
+  image: /assets/img/games/light-house.png
+  jam: GMTK Game Jam 2024
+  description: >-
+    3D survival horror game about finding the light.
+  tags: [3D, Horror, Windows]
+  team: Team of 5
+
+- name: Corruption
+  url: https://vellichorgames.itch.io/corruption
+  image: /assets/img/games/corruption.png
+  jam: VimJam 5
+  description: >-
+    Challenging 2D pixel-art platformer designed around speedrunning.
+  tags: [2D, Pixel Art, Platformer]
+  team: With Zaher Ilbih and Steven K. Jr.

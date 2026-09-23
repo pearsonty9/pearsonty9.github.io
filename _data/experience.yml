@@ -1,0 +1,17 @@
+# Newest first. `end: Present` for a current role.
+- company: IBM
+  team: X-Force
+  title: Software Developer
+  start: Jan 2023
+  end: Present
+  summary: >-
+    Build applications that automate threat intelligence gathering and
+    penetration testing for IBM's offensive and threat research team.
+  highlights:
+    - Built a malware reverse engineering tool that gives reverse engineers
+      quick access to information about any malware sample they encounter.
+    - Automated external network penetration tests, turning manual
+      reconnaissance and testing steps into repeatable tooling.
+    - Contributed to several internal applications that automate the
+      collection and processing of threat intelligence.
+  tags: [Python, JavaScript, Security, Automation]

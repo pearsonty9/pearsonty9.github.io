@@ -1,0 +1,20 @@
+bio:
+  - >-
+    I'm a full-stack software developer focused on web and game development.
+    At IBM X-Force I build tools that automate threat intelligence and
+    penetration testing, turning slow, manual security work into software.
+  - >-
+    Outside of work I make small games in game jams with friends, usually in
+    Godot, where the goal is to ship something fun in a weekend.
+
+skills:
+  - group: Languages
+    items: [JavaScript, Python, HTML, CSS]
+  - group: Focus
+    items: [Full-stack web, Game development, Security automation]
+  - group: Tools
+    items: [Godot, Git]
+
+education:
+  - school: University of Central Florida
+    degree: B.S. Computer Science
