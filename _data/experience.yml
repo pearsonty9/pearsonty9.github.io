@@ -1,0 +1,30 @@
+# Newest first. `end: Present` for a current role.
+# Highlights support Markdown (e.g. **bold** lead-ins).
+- company: IBM
+  team: X-Force
+  title: Software Developer
+  start: Jan 2023
+  end: Present
+  summary: >-
+    Full-stack developer building internal tools that automate malware
+    analysis, penetration testing infrastructure, and threat intelligence.
+  highlights:
+    - >-
+      **Malware analysis platform.** Built a React and TypeScript interface
+      that streams analysis results to reverse engineers as each one becomes
+      available. The Python backend uses a message queue and concurrent workers
+      to run every sample through multiple sandbox and threat-intel
+      integrations, supporting high-volume malware triage.
+    - >-
+      **Pentest infrastructure automation.** Built a pipeline that
+      automatically provisions modular, containerized testing environments for
+      application, wireless, and cloud engagements once a customer engagement
+      is approved, including tester access management. Built-in health
+      reporting from deployed environments gave the team visibility into
+      client-side issues and reduced time spent troubleshooting on client calls.
+    - >-
+      **Threat intelligence pipelines.** Automated pipelines that enrich
+      vulnerability research and indicators of compromise with public and
+      AI-gathered data, load the results into a graph database for analysts,
+      and publish them through standard threat-intel sharing platforms.
+  tags: [TypeScript, React, Python, Docker, Message queues]

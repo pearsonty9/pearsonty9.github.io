@@ -1,0 +1,38 @@
+title: Tyler Pearson
+tagline: Full-stack software developer
+description: >-
+  Full-stack software developer focused on web and game development.
+  Building security automation at IBM X-Force and small games in game jams.
+url: "https://pearsonty9.github.io"
+baseurl: ""
+
+author:
+  name: Tyler Pearson
+
+# Links shown in the header and footer. Remove or add entries freely.
+# `icon` must match an icon name in _includes/icon.html.
+social:
+  - name: GitHub
+    url: https://github.com/pearsonty9
+    icon: github
+  - name: itch.io
+    url: https://tigershillo.itch.io/
+    icon: gamepad
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/pearson-tyler
+    icon: linkedin
+  - name: Email
+    url: mailto:pearsonty9@gmail.com
+    icon: mail
+  # - name: Resume
+  #   url: /assets/resume.pdf
+  #   icon: file
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
