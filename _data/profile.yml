@@ -9,11 +9,11 @@ bio:
 
 skills:
   - group: Languages
-    items: [JavaScript, Python, HTML, CSS]
+    items: [JavaScript, TypeScript, Python, HTML, CSS]
   - group: Focus
     items: [Full-stack web, Game development, Security automation]
   - group: Tools
-    items: [Godot, Git]
+    items: [React, Docker, Godot, Git]
 
 education:
   - school: University of Central Florida

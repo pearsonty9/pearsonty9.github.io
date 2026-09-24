@@ -47,7 +47,7 @@ layout: default
         <h3>{{ job.title }} <span class="at">· {{ job.company }}{% if job.team %} {{ job.team }}{% endif %}</span></h3>
         {% if job.summary %}<p>{{ job.summary }}</p>{% endif %}
         {% if job.highlights %}
-        <ul class="highlights">{% for h in job.highlights %}<li>{{ h }}</li>{% endfor %}</ul>
+        <ul class="highlights">{% for h in job.highlights %}<li>{{ h | markdownify | remove: "<p>" | remove: "</p>" }}</li>{% endfor %}</ul>
         {% endif %}
         {% if job.tags %}<ul class="chips">{% for t in job.tags %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}
       </div>
