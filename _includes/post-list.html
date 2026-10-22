@@ -1,0 +1,15 @@
+{%- comment -%} Usage: {% include post-list.html posts=site.posts limit=3 %} {%- endcomment -%}
+{%- assign max = include.limit | default: 1000 -%}
+<ul class="post-list">
+  {% for post in include.posts limit: max %}
+  <li>
+    <a href="{{ post.url | relative_url }}">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+      <span class="post-list-body">
+        <span class="post-list-title">{{ post.title }}</span>
+        <span class="post-list-excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 28 }}</span>
+      </span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

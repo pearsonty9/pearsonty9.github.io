@@ -30,6 +30,16 @@ social:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
+
+# Blog posts live in _posts/ as YYYY-MM-DD-title.md.
+permalink: /blog/:year/:title/
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
 
 exclude:
   - README.md

@@ -77,3 +77,11 @@ layout: default
     {% endfor %}
   </div>
 </section>
+
+{% if site.posts.size > 0 %}
+<section id="writing" class="section">
+  <h2 class="section-title">Writing</h2>
+  {% include post-list.html posts=site.posts limit=3 %}
+  <p class="more"><a href="{{ '/blog/' | relative_url }}">All posts &rarr;</a></p>
+</section>
+{% endif %}
