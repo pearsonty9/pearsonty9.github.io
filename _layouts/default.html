@@ -11,6 +11,7 @@
     } catch (e) {}
   </script>
   {% seo %}
+  {% feed_meta %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -22,9 +23,10 @@
     <div class="container nav">
       <a class="brand" href="{{ '/' | relative_url }}">TP</a>
       <nav aria-label="Sections">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
+        <a href="{{ '/#about' | relative_url }}">About</a>
+        <a href="{{ '/#experience' | relative_url }}">Experience</a>
+        <a href="{{ '/#projects' | relative_url }}">Projects</a>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
         <span class="when-light">{% include icon.html name="moon" %}</span>

@@ -15,6 +15,15 @@ All content lives in data files, so no HTML changes are needed:
 
 Project cover images go in `assets/img/games/`.
 
+## Writing blog posts
+
+1. Create `_posts/YYYY-MM-DD-your-title.md` (see `_drafts/example-post.md` for front matter and formatting).
+2. Put images in `assets/img/blog/`.
+3. Keep unfinished posts in `_drafts/` (no date in the filename); they are never published.
+   Preview them with `bundle exec jekyll serve --drafts`.
+
+Posts appear at `/blog/`, in the home page's Writing section (latest 3), and in the RSS feed at `/feed.xml`.
+
 ## Running locally
 
 Requires Ruby 3.x+ (`brew install ruby`, then add `/opt/homebrew/opt/ruby/bin` to your PATH).

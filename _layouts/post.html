@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{%- assign words = content | number_of_words -%}
+<article class="post">
+  <header class="post-header">
+    <a class="back" href="{{ '/blog/' | relative_url }}">&larr; All posts</a>
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      · {{ words | divided_by: 200 | at_least: 1 }} min read
+    </p>
+    {% if page.tags.size > 0 %}<ul class="chips">{% for t in page.tags %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <nav class="post-nav" aria-label="More posts">
+    {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span>Older</span>{{ page.previous.title }}</a>{% else %}<span></span>{% endif %}
+    {% if page.next %}<a class="next" href="{{ page.next.url | relative_url }}"><span>Newer</span>{{ page.next.title }}</a>{% endif %}
+  </nav>
+</article>

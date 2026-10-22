@@ -1,0 +1,17 @@
+---
+layout: default
+title: Blog
+description: Writing on web development, game jams, and security tooling.
+---
+<section class="page-head">
+  <h1>Blog</h1>
+  <p class="lede">{{ page.description }} <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+</section>
+
+<section class="section">
+  {% if site.posts.size > 0 %}
+    {% include post-list.html posts=site.posts %}
+  {% else %}
+    <p class="empty">No posts yet. Check back soon.</p>
+  {% endif %}
+</section>
