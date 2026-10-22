@@ -17,7 +17,7 @@ Project cover images go in `assets/img/games/`.
 
 ## Writing blog posts
 
-1. Create `_posts/YYYY-MM-DD-your-title.md` (see `_posts/2026-10-21-making-dilemma.md` for front matter and formatting).
+1. Create `_posts/YYYY-MM-DD-your-title.md` (see `_posts/2024-12-22-making-dilemma.md` for front matter and formatting).
 2. Put images in `assets/img/blog/`.
 3. Keep unfinished posts in `_drafts/` (no date in the filename); they are never published.
    Preview them with `bundle exec jekyll serve --drafts`.
