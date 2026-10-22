@@ -104,6 +104,9 @@ h1, h2, h3 { line-height: 1.2; margin: 0; }
 
 .social { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .social a, .social button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
   font-family: inherit;
   line-height: inherit;
   cursor: pointer;
