@@ -6,7 +6,7 @@ image: /assets/img/games/dilemma.png
 ---
 
 [DiLemma](https://tigershillo.itch.io/dilemma) is a small action platformer I made
-with two friends, Zaher Ilbih and Steven K. Jr., for Secret Santa Jam 2024. It was a
+with two friends, Zaher and Steven, for Secret Santa Jam 2024. It was a
 classic jam experience: two weeks with three of us in a small apartment, writing code and building
 something together until the deadline.
 
