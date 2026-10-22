@@ -8,7 +8,7 @@
     Action platformer built around combo-based combat, with four attack
     combinations and boss battles. Playable in the browser.
   tags: [Godot, Platformer, Browser]
-  team: With Zaher and Steven
+  team: With Zaher Ilbih and Steven Keppinger
   featured: true
 
 - name: Kart Wheel
@@ -38,4 +38,4 @@
   description: >-
     Challenging 2D pixel-art platformer designed around speedrunning.
   tags: [2D, Pixel Art, Platformer]
-  team: With Zaher and Steven
+  team: With Zaher Ilbih and Steven Keppinger
