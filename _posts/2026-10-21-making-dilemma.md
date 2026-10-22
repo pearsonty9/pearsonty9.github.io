@@ -147,8 +147,4 @@ spawn when their animation finishes, so changing the timing meant touching the a
 as well. Next time, I'd prototype combat with placeholder shapes and no animation at
 all, get the *feel* right first, and then fit the art to the timings.
 
-## Play it
-
-DiLemma is free to play in the browser on
-[itch.io](https://tigershillo.itch.io/dilemma). Try chaining `J` `L` `L` for
-the Empowered Fireball.
+**[Play DiLemma on itch.io →](https://tigershillo.itch.io/dilemma)**

@@ -55,6 +55,43 @@
       root.dataset.theme = dark ? "light" : "dark";
       try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
     });
+
+    document.querySelectorAll("[data-copy]").forEach(function (btn) {
+      var label = btn.querySelector("[data-label]");
+      var original = label.textContent;
+      label.setAttribute("aria-live", "polite");
+      btn.addEventListener("click", function () {
+        var text = btn.dataset.copy;
+        var done = function () {
+          label.textContent = "Copied!";
+          btn.classList.add("copied");
+          clearTimeout(btn._reset);
+          btn._reset = setTimeout(function () {
+            label.textContent = original;
+            btn.classList.remove("copied");
+          }, 1800);
+        };
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(text).then(done, function () { fallback(text) && done(); });
+        } else if (fallback(text)) {
+          done();
+        }
+      });
+    });
+
+    function fallback(text) {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand("copy"); } catch (e) {}
+      ta.remove();
+      return ok;
+    }
   </script>
 </body>
 </html>
