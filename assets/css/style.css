@@ -103,7 +103,10 @@ h1, h2, h3 { line-height: 1.2; margin: 0; }
 .lede strong { color: var(--text); font-weight: 600; }
 
 .social { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
-.social a {
+.social a, .social button {
+  font-family: inherit;
+  line-height: inherit;
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -116,7 +119,14 @@ h1, h2, h3 { line-height: 1.2; margin: 0; }
   font-weight: 500;
   transition: border-color .15s, color .15s;
 }
-.social a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.social a:hover, .social button:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+/* Split button: copy on the left, open link on the right */
+.split { display: inline-flex; }
+.split button { border-radius: 999px 0 0 999px; }
+.split a { border-radius: 0 999px 999px 0; margin-left: -1px; padding: 8px 12px; }
+.split button:hover, .split a:hover { position: relative; z-index: 1; }
+.split button.copied { border-color: var(--accent); color: var(--accent); position: relative; z-index: 1; }
 
 /* Sections */
 .section { padding: 56px 0; border-top: 1px solid var(--border); }

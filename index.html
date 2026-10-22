@@ -9,7 +9,15 @@ layout: default
   <p class="lede">{{ site.tagline }} focused on <strong>web</strong> and <strong>game development</strong>. Currently building security automation at IBM X-Force.</p>
   <ul class="social">
     {% for link in site.social %}
+    {% if link.copy %}
+    {%- assign copy_value = link.url | remove: "mailto:" -%}
+    <li class="split">
+      <button type="button" data-copy="{{ copy_value }}" title="Copy {{ copy_value }}">{% include icon.html name=link.icon %}<span data-label>{{ link.name }}</span></button>
+      <a href="{{ link.url }}" title="Open in mail app" aria-label="Open {{ link.name }} in mail app">{% include icon.html name="arrow" %}</a>
+    </li>
+    {% else %}
     <li><a href="{{ link.url }}">{% include icon.html name=link.icon %}<span>{{ link.name }}</span></a></li>
+    {% endif %}
     {% endfor %}
   </ul>
 </section>
