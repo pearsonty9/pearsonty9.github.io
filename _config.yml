@@ -33,7 +33,6 @@ social:
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
-  - jekyll-redirect-from
 
 # Blog posts live in _posts/ as YYYY-MM-DD-title.md.
 permalink: /blog/:year/:title/

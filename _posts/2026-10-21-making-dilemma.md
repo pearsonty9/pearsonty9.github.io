@@ -3,7 +3,6 @@ title: "Making DiLemma: tuning a combo system in two weeks"
 description: How we built a math-themed dungeon brawler for Secret Santa Jam 2024, and what I learned making a three-button combo system feel good.
 tags: [Godot, Game Jam, GDScript, Shaders]
 image: /assets/img/games/dilemma.png
-redirect_from: /blog/2026/making-dilemma/
 ---
 
 [DiLemma](https://tigershillo.itch.io/dilemma) is a small action platformer I made
