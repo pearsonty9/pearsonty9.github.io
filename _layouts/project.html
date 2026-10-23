@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{%- assign p = site.data.projects | where: "name", page.project | first -%}
+<article class="post">
+  <header class="post-header">
+    <a class="back" href="{{ '/#projects' | relative_url }}">&larr; All projects</a>
+    {% if p.jam %}<p class="post-meta">{{ p.jam }}{% if p.team %} · {{ p.team }}{% endif %}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.tags.size > 0 %}<ul class="chips">{% for t in page.tags %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}
+    {% if p.url %}<p class="post-play"><a href="{{ p.url }}">Play {{ p.name }} on itch.io {% include icon.html name="arrow" %}</a></p>{% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
