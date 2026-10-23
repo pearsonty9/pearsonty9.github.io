@@ -1,7 +1,10 @@
 # Game jam projects. Covers live in assets/img/games/.
 # Set `featured: true` to show a project first.
+# Set `page` to a write-up on this site (e.g. projects/dilemma.md) to link the card
+# there instead of straight to `url`.
 - name: DiLemma
   url: https://tigershillo.itch.io/dilemma
+  page: /projects/dilemma/
   image: /assets/img/games/dilemma.png
   jam: Secret Santa Jam 2024
   description: >-

@@ -11,13 +11,17 @@ All content lives in data files, so no HTML changes are needed:
 | `_config.yml` | Name, tagline, SEO description, social links |
 | `_data/profile.yml` | Bio paragraphs, skills, education |
 | `_data/experience.yml` | Work history (newest first) |
-| `_data/projects.yml` | Project cards (`featured: true` sorts to the top) |
+| `_data/projects.yml` | Project cards (`featured: true` sorts to the top; `page` links a card to a write-up) |
 
 Project cover images go in `assets/img/games/`.
 
+To give a project its own write-up page, add a Markdown file in `projects/` with
+`layout: project`, `project: <name from projects.yml>` and a `permalink`, then set
+that permalink as the project's `page` (see `projects/dilemma.md`).
+
 ## Writing blog posts
 
-1. Create `_posts/YYYY-MM-DD-your-title.md` (see `_posts/2026-10-21-making-dilemma.md` for front matter and formatting).
+1. Create `_posts/YYYY-MM-DD-your-title.md` with `title`, `description` and `tags` front matter.
 2. Put images in `assets/img/blog/`.
 3. Keep unfinished posts in `_drafts/` (no date in the filename); they are never published.
    Preview them with `bundle exec jekyll serve --drafts`.

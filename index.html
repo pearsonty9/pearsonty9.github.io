@@ -72,7 +72,7 @@ layout: default
   {%- assign projects = featured | concat: rest -%}
   <div class="cards">
     {% for p in projects %}
-    <a class="card" href="{{ p.url }}">
+    <a class="card" href="{% if p.page %}{{ p.page | relative_url }}{% else %}{{ p.url }}{% endif %}">
       <div class="card-img"><img src="{{ p.image | relative_url }}" alt="{{ p.name }} cover art" loading="lazy"></div>
       <div class="card-body">
         <p class="card-jam">{{ p.jam }}</p>
