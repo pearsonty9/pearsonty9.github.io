@@ -28,6 +28,7 @@
 
 - name: Light House
   url: https://vellichorgames.itch.io/light-house
+  page: /projects/light-house/
   image: /assets/img/games/light-house.png
   jam: GMTK Game Jam 2024
   description: >-
@@ -37,6 +38,7 @@
 
 - name: Corruption
   url: https://vellichorgames.itch.io/corruption
+  page: /projects/corruption/
   image: /assets/img/games/corruption.png
   jam: VimJam 5
   description: >-
